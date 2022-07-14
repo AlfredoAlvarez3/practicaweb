@@ -3,9 +3,10 @@
 $servidor="localhost";
 $usuario="root";
 $password="";
+$base="integradora";
 
 //crear una variable para la conexion
-$conn=mysqli_connect($servidor,$usuario,$password);
+$conn=mysqli_connect($servidor,$usuario,$password,$base);
 
 //probar la conexion
 if(!$conn)
