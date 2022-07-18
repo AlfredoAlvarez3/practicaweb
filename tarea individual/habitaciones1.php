@@ -76,13 +76,18 @@
   background:white;
   box-shadow: 7px 13px 37px #A06D9E;
   "
-  method = "GET"
-  action="recibir.php">
+  method = "POST"
+  action="conexion.php">
+
+  <div class="form-group">
+    <label for="tipo_h">id: </label>
+    <input class="form-control" name ="id"></input>
+  </div>
 
  <h2 style="text-align: center;">Registro de Habitaciones</h2>
   <div class="form-group">
     <label for="tipo_h">Tipo habitacion:</label>
-    <select style="background: white;" name="tipo_h" class="form-control">
+    <select style="background: white;" name="tipo" class="form-control">
         <option selected >Suit</option>
         <option>Doble</option>
         <option>Triple</option>
@@ -92,12 +97,12 @@
 
   <div class="form-group">
     <label for="tipo_h">Precio: </label>
-    <input class="form-control" name ="precio_h"></input>
+    <input class="form-control" name ="precio"></input>
   </div>
 
   <div class="form-group">
     <label for="tipo_h">Cantidad: </label>
-    <input class="form-control" name ="cantidad_h"></input>
+    <input class="form-control" name ="cantidad"></input>
   </div>
 
   
